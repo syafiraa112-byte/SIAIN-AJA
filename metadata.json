@@ -1,0 +1,5 @@
+{
+  "name": "MediRouter AI Coordinator",
+  "description": "A centralized AI coordinator interface that routes medical requests to specialized agents using Gemini Function Calling strict mode.",
+  "requestFramePermissions": []
+}
