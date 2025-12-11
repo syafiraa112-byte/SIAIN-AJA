@@ -1,4 +1,4 @@
-const { GoogleGenAI } = require("@google/genai");
+import { GoogleGenAI } from "@google/genai";
 
 // Re-defining system instructions here for the backend context
 const SYSTEM_INSTRUCTION = `
@@ -43,7 +43,7 @@ const functionDeclarations = [
     }
 ];
 
-exports.handler = async (event, context) => {
+export const handler = async (event, context) => {
     // Verify API Key from Netlify Environment Variables
     const apiKey = process.env.GEMINI_API_KEY; // OR process.env.API_KEY depending on your Netlify setup
     if (!apiKey) {
